@@ -1,13 +1,13 @@
-﻿
-<?php
 
+<?php
+	ini_set('display_errors', 1);
 	$inData = getRequestInfo();
 	
 	$id = 0;
 	$firstName = "";
 	$lastName = "";
 
-	$conn = new mysqli("localhost", "TheBeast", "WeLoveContactTube", "ContactTube"); 	
+	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "ContactTube"); 	
 	if( $conn->connect_error )
 	{
 		returnWithError( $conn->connect_error );
